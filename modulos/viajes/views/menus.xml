@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <menuitem id="main_viajes_menu" name="Viajes" />
+
+        <menuitem id="viajes_menu" name="Elementos" parent="main_viajes_menu" />
+
+        <menuitem id="vehiculo_menu" name="Vehiculos"
+            parent="viajes_menu"
+            action="vehiculo_list_action" />
+    </data>
+</odoo>

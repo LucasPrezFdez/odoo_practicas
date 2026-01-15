@@ -9,5 +9,7 @@
                 <p class="oe_view_nocontent_smiling_face">Crear el primer vehiculo</p>
             </field>
         </record>
+
+
     </data>
 </odoo>
