@@ -7,5 +7,9 @@
         <menuitem id="vehiculo_menu" name="Vehiculos"
             parent="viajes_menu"
             action="vehiculo_list_action" />
+
+        <menuitem id="viaje_menu" name="Viajes"
+            parent="viajes_menu"
+            action="viaje_list_action" />
     </data>
 </odoo>

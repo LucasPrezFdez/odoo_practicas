@@ -10,6 +10,52 @@
             </field>
         </record>
 
+        <record model="ir.ui.view" id="vehiculo_list_view">
+            <field name="name">vehiculo.list</field>
+            <field name="model">viajes.vehiculo</field>
+            <field name="arch" type="xml">
+                <list string="Vehiculo List">
+                    <field name="modelo" />
+                    <field name="marca" />
+                </list>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="vehiculo_form_view">
+            <field name="name">vehiculo.form</field>
+            <field name="model">viajes.vehiculo</field>
+            <field name="arch" type="xml">
+                <form string="Formulario de Vehiculo">
+                    <sheet>
+                        <group>
+                            <field name="modelo" />
+                            <field name="marca" />
+                            <field name="propietario_id" />
+                        </group>
+                        <notebook>
+                            <page string="Descripcion">
+                                <field name="descripcion" />
+                            </page>
+                            <page string="Acerca de">
+                                Esto es un ejemplo
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="vehiculo_search_view">
+            <field name="name">vehiculo.search</field>
+            <field name="model">viajes.vehiculo</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="marca" />
+                    <field name="descripcion" />
+
+                </search>
+            </field>
+        </record>
 
     </data>
 </odoo>

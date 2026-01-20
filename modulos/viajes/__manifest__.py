@@ -6,7 +6,7 @@
         Este modulo permite el control y la gestión de los viajes que realizan los pasajeros en vehiculos
     """,
 
-    'author': "Lucas Perez",
+    'author': "Lucas Perez",    
     'website': "github",
 
     # Categories can be used to filter modules in modules listing
@@ -22,11 +22,13 @@
     'data': [
        'security/ir.model.access.csv',
         'views/vehiculo.xml',
+        'views/viaje.xml',
         'views/menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
+        'demo/demo.viajes.xml'
     ],
     'installable': True,
     'application': True
