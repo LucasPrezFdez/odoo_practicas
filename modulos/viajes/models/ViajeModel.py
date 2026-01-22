@@ -22,11 +22,12 @@ class Viaje(models.Model):
         required=True
     )
 
-    
-    # En la relación many2one me permite elegir un partner/cliente o crear uno directamente
+   # En la relación many2one me permite elegir un partner/cliente o crear uno directamente
     conductor_id = fields.Many2one('res.partner', string="Conductor")
-
-      
+    
     # En la relación many2one me permite elegir un vehiculo o crear uno directamente
     vehiculo_id = fields.Many2one('viajes.vehiculo',
         ondelete='cascade', string="Vehiculo", required=True)
+    
+    # puedo elegir uno(partner/cliente) que ya existe o crear uno nuevo
+    pasajeros_ids = fields.Many2many('res.partner', string="Pasajeros")

@@ -13,22 +13,23 @@
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'viajes',
-    'version': '1.0',
+     'version': '1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
     # always loaded
     'data': [
-       'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/vehiculo.xml',
         'views/viaje.xml',
-        'views/menus.xml',
+        'views/partner.xml',
+        'views/menus.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
-        'demo/demo.viajes.xml'
+        'demo/demo.viajes.xml',
     ],
     'installable': True,
     'application': True

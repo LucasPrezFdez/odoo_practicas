@@ -39,6 +39,8 @@
                                 <field name="plazas" />
                             </group>
                         </group>
+                        <label for="pasajeros_ids" />
+                        <field name="pasajeros_ids" />
                     </sheet>
                 </form>
             </field>
