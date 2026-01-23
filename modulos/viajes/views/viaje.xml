@@ -39,8 +39,20 @@
                                 <field name="plazas" />
                             </group>
                         </group>
-                        <label for="pasajeros_ids" />
-                        <field name="pasajeros_ids" />
+                        <notebook>
+                            <page string="pasajeros">
+                                <field name="pasajeros_ids" />
+                            </page>
+                            <page string="Paradas">
+                                <field name="paradas_ids">
+                                    <list string="Paradas registrados">
+                                        <field name="titulo" />
+                                        <field name="fecha" />
+                                        <field name="localizacion" />
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

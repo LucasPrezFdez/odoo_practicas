@@ -24,6 +24,7 @@
         'views/vehiculo.xml',
         'views/viaje.xml',
         'views/partner.xml',
+        'views/parada.xml',
         'views/menus.xml'
     ],
     # only loaded in demonstration mode
