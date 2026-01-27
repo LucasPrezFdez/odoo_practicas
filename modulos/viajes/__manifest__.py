@@ -25,7 +25,8 @@
         'views/viaje.xml',
         'views/partner.xml',
         'views/parada.xml',
-        'views/menus.xml'
+        'views/menus.xml',
+        'views/saludo_template.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

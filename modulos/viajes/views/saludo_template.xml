@@ -1,0 +1,8 @@
+<odoo>
+    <template id="saludo_plantilla">
+        <t t-name="viajes.saludo">
+            <h1>Cebem con plantilla</h1>
+            <p>Hola desde Cebem usando plantillas correctamente</p>
+        </t>
+    </template>
+</odoo>

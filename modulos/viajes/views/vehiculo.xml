@@ -31,6 +31,7 @@
                             <field name="modelo" />
                             <field name="marca" />
                             <field name="propietario_id" />
+                            <field name="matricula" />
                         </group>
                         <notebook>
                             <page string="Descripcion">

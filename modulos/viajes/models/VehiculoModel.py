@@ -15,3 +15,21 @@ class Vehiculo(models.Model):
     def _compute_display_name(self):
         for record in self:
             record.display_name = f"{record.modelo} - {record.marca}" if record.marca else record.modelo
+
+
+
+     # En la relacion one2many tengo que crear un coche nuevo al asociarlo
+    viaje_ids = fields.One2many(
+        'viajes.viaje', 'vehiculo_id', string="Viajes del coche")
+    
+    matricula = fields.Char()
+
+    _sql_constraints = [
+        ('matricula_descripcion_check',
+         'CHECK(matricula != descripcion)',
+         "La matricula del coche no puede ser igual que la descripción"),
+
+        ('nmatricula_unique',
+         'UNIQUE(matricula)',
+         "La matricula tiene que ser única"),
+    ]
